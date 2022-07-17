@@ -1,0 +1,15 @@
+[package]
+name = "multi-threading-cortex"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+atsamd21g = "0.12.0"
+cortex-m = "0.7.5"
+cortex-m-rt = "0.7.1"
+
+[dependencies.arduino_nano33iot]
+version = "0.7.0"
+features = ["unproven", "usb"]
