@@ -77,6 +77,7 @@ fn main() -> ! {
 
     cortex_m::interrupt::free(|_cs| {
         machine.led.set_low().unwrap();
+        machine.ext_led.set_low().unwrap();
     });
 
     machine.tc3.start(2.hz());
